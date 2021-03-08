@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        
+        <label for="modifh1">modifier le h1</label><br>
+        <input type="text" id="modifh1" v-model="message"></input><br><br>
+        
+
+        <input type="text" id="modifh2" v-model="message3">
+        <button @click="changetext">changer le h2</button><br><br>
+
+        <label for="check">rougifier</label>
+        <input type="checkbox" v-model="checked" id="check">
+
+        <div :class="checked ? 'red' : 'black'">
+            <h1 id="texte" > {{message}} </h1>
+            <h2 >{{message2}}</h2>
+        </div>
+
+        <label for="check">masquer</label>
+        <input type="checkbox" id="check" v-model="show"><br>
+        <img v-if="!show" height="250" src="https://static.fnac-static.com/multimedia/Images/FR/NR/1a/5c/c1/12672026/1507-1/tsp20210112070849/Daredevil-T03-L-enfer.jpg"><br>
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
