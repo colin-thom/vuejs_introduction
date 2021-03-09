@@ -1,0 +1,25 @@
+{
+  "name": "vuejs_introduction",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "coucou": "echo coucou toi",
+    "moche":"node image.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colin-thom/vuejs_introduction.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/colin-thom/vuejs_introduction/issues"
+  },
+  "homepage": "https://github.com/colin-thom/vuejs_introduction#readme",
+  "description": "",
+  "dependencies": {
+    "imagemin": "^7.0.1",
+    "imagemin-pngquant": "^9.0.2"
+  }
+}
